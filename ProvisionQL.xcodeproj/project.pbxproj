@@ -210,7 +210,7 @@
 				ORGANIZATIONNAME = "Evgeny Aleksandrov";
 				TargetAttributes = {
 					55DB727C186E193500CAFEE7 = {
-						DevelopmentTeam = 5567X9EQ9Q;
+						DevelopmentTeam = 98VNQ8FT5Y;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -386,12 +386,12 @@
 		55DB7298186E193500CAFEE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5567X9EQ9Q;
+				DEVELOPMENT_TEAM = 98VNQ8FT5Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ProvisionQL/Supporting-files/Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
@@ -406,12 +406,12 @@
 		55DB7299186E193500CAFEE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5567X9EQ9Q;
+				DEVELOPMENT_TEAM = 98VNQ8FT5Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ProvisionQL/Supporting-files/Info.plist";
 				INSTALL_PATH = /Library/QuickLook;

@@ -354,6 +354,11 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         if ([dataType isEqualToString:kDataType_ipa] || [dataType isEqualToString:kDataType_xcode_archive]) {
             NSDictionary *appPropertyList = [NSPropertyListSerialization propertyListWithData:appPlist options:0 format:NULL error:NULL];
 
+            NSMutableString *dictionaryFormatted = [NSMutableString string];
+            displayKeyAndValue(0, nil, appPropertyList, dictionaryFormatted);
+            synthesizedValue = [NSString stringWithFormat:@"<pre>%@</pre>", dictionaryFormatted];
+            [synthesizedInfo setObject:synthesizedValue forKey:@"InfoPlistFormatted"];
+
             NSString *bundleName = [appPropertyList objectForKey:@"CFBundleDisplayName"];
             if (!bundleName) {
                 bundleName = [appPropertyList objectForKey:@"CFBundleName"];
@@ -684,3 +689,4 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbnail) {
     // Implement only if supported
 }
+
